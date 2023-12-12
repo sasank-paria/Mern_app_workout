@@ -10,7 +10,6 @@ const app = express()
 //to use json data
 app.use(express.json())
 
-
 //middleware
 app.use((req,res,next)=>{
     console.log("middleware")
@@ -19,8 +18,6 @@ app.use((req,res,next)=>{
 
 //routes
 app.use('/api/workouts',workoutRoutes)
-
-
 
 //connect to database
 mongoose.connect(process.env.MONGO_URI)
