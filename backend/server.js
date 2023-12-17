@@ -15,7 +15,7 @@ app.use((req,res,next)=>{
     console.log("middleware")
     next();
 })
-console.log("heleo")
+
 
 //routes
 app.use('/api/workouts',workoutRoutes)
